@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box; /* il comportamento di default è content-box, con border-box, larghezza e altezza includono anche il padding e i bordi, rendendo più intutivo il calcolo delle dimensioni */
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 83px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenitore {
+    max-width: 1100px; /* o quello che volete */
+    margin: 0 auto; /* per centrare quel contenitore nella pagina */
+}
+
+header {
+    background-color: #FBD7DD;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    text-transform: uppercase;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* aggiungere posixion fixed alla fine */
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.info {     /* titolo che ho chiamato h1 */
+    background-color: #ffffff;
+    color: #000000;
+    padding: 147px 16px 64px 16px;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 128px;       /* è lo spazio sopra al titolo */
+}
+
+
+
+
+.info1 h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+.info2 h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+.info3 h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+
+
+
+
+div.flex {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.testo {
+    width: 40%;
+}
+
+.immagine {
+    width: 60%;
+}
+
+div.flex img {
+    border-radius: 8px;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+div.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.info1 {
+    background-color: #ffffff;      
+    padding: 64px 16px;
+    margin: 32px 0;
+}
+.info2 {
+    background-color: #ffffff;      
+    padding: 64px 16px;
+    margin: 32px 0;
+}
+.info3 {
+    background-color: #ffffff;      
+    padding: 64px 16px;
+    margin: 32px 0;
+}
+
+.info1 {
+    border-top: 5px solid #F76A82;
+}
+
+.info2 {
+    border-top: 5px solid #F76A82;
+}
+
+.info3 {
+    border-top: 5px solid #F76A82;
+}
+
+
+.immaginegrande{
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+footer {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 16px;
+}
+
+footer nav ul {
+    display: flex;
+    list-style-type: none;        /* togliere sottolineato e mettere colore nero! */
+    gap: 32px;
+}
+
+footer a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+
+@media (max-width:700px) /* o la misura che volete */  {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        flex-direction: column;
+        align-items:start
+    }
+
+    div.flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .testo, .immagine {
+        width: 100%;
+    }
+}
